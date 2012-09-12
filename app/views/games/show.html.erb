@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<div class="well">
+
 <p>
   <b>Starts at:</b>
   <%= @game.starts_at %>
@@ -10,19 +12,14 @@
   <%= @game.ends_at %>
 </p>
 
-<p>
-  <b>Home team:</b>
-  <%= @game.home_team %>
-</p>
+</div>
+
+<div class="well">
+	<%= @game.name %> at <%= @game.venue.name %>
+	</div>
 
 <p>
-  <b>Away team:</b>
-  <%= @game.away_team %>
-</p>
-
-<p>
-  <b>Venue:</b>
-  <%= @game.venue %>
+<%= image_tag 'http://maps.googleapis.com/maps/api/staticmap?sensor=false&size=600x300&markers=color:red|label:B|' + @game.venue.address %>
 </p>
 
 

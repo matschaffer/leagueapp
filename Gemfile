@@ -38,4 +38,7 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 gem 'devise'
-gem 'rails_admin'
+gem 'rails_admin', github: 'sferik/rails_admin'
+gem 'event-calendar', :require => 'event_calendar'
+
+gem 'bootstrap-sass'
