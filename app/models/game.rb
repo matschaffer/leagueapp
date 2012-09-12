@@ -9,6 +9,6 @@ class Game < ActiveRecord::Base
   has_event_calendar :start_at_field  => 'starts_at', :end_at_field => 'ends_at'
   
   def name
-    "#{home_team.name} vs #{away_team.name}"
+    "#{home_team.name} vs #{away_team.name}" rescue nil
   end
 end
