@@ -1,4 +1,12 @@
 Leagueapp::Application.routes.draw do
+  resources :games
+
+  resources :venues
+
+  resources :players
+
+  resources :teams
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
